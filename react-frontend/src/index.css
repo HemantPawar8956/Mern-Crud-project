@@ -1,0 +1,288 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+.layout {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #e8e8ea;
+}
+.NavBarMain {
+  height: 95%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.NavBar {
+  height: 100%;
+  width: 95%;
+  border-radius: 10px;
+  background-color: #1183fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+/* Logo styling */
+.NavBarLogo {
+  height: 25%;
+  width: 100%;
+  border: 1px solid;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Links container */
+.NavBarLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual links styling */
+.NavBarLinks a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #0569d3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.4s ease;
+}
+
+/* Hover effect for links */
+.NavBarLinks a:hover {
+  background-color: #022cb6;
+  color: #fff;
+}
+
+.searchbar {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 1px solid rgb(205, 203, 203);
+  border-radius: 3px;
+}
+.container {
+  height: 100%;
+  width: 80%;
+  padding: 14px 10px;
+}
+.createUser {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: transparent;
+}
+
+.createUser h1 {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #474646;
+  font-size: 25px;
+}
+
+form {
+  /* height: 90%; */
+  width: 50%;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+.form-group2 {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group2 .form-group {
+  width: 48%;
+}
+.form-group label,
+.form-group2 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  font-size: small;
+}
+
+.form-group input,
+.form-group2 input,
+.form-group select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  padding: 7px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.allUsers {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* background-clip: border-box; */
+}
+.allUsers::-webkit-scrollbar {
+  display: none;
+}
+.allUserNav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding-bottom: 16px;
+}
+
+.allUserNavLeft button,
+.allUserNavRight button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 6px 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.allUserNavLeft button:hover,
+.allUserNavRight button:hover {
+  background-color: #0056b3;
+}
+
+.allUserNavRight input[type="search"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+table {
+  width: 100%;
+  /* height: 70%; */
+  border-collapse: collapse;
+  font-size: small;
+  border-radius: 5px;
+  overflow: hidden;
+}
+table thead {
+  /* position: sticky;
+  top: 0px; */
+  background-color: #fff; /* Ensure the background matches the table's or container's background */
+  z-index: 1;
+  background-color: #ccc;
+  font-weight: bold;
+}
+table th {
+  padding: 10px 20px !important;
+}
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+  text-align: center;
+  background-color: transparent;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #efeded;
+}
+table tr td button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+table tr td .delBtn {
+  background-color: rgb(250, 121, 121);
+}
+table tr td .delBtn:hover {
+  background-color: rgb(252, 45, 45);
+}
+table tr td .updateBtn {
+  background-color: rgb(81, 137, 81);
+}
+table tr td .updateBtn:hover {
+  background-color: rgb(1, 87, 1);
+}
+.updateUser {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(142, 142, 142);
+}
+.updateUser .createUser {
+  width: 100%;
+}
+.updateUser .createUser h1 {
+  color: #fff;
+}
+.updateUser .createUser form {
+  width: 40%;
+}
+select option {
+  color: #fff;
+  background-color: #131313ec;
+}
